@@ -1,0 +1,57 @@
+main {
+    background-image: url("../../../assets/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.detail-wrapper {
+    padding: 50px 300px 150px;
+
+    @include media-breakpoint-down(xlg) {
+        padding: 50px 50px 150px;
+    }
+
+    .details {
+
+        span {
+            letter-spacing: 18px;
+            font-weight: $font-weight-semibold;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                padding-left: 20px;
+            }
+        }
+
+        a {
+            padding: 8px 28px;
+            background-image: linear-gradient(to right, #f4b8b9, #ee9697);
+        }
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.desktop-img {
+    display: block;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.mobile-img {
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+}
