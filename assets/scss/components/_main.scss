@@ -4,11 +4,20 @@ main {
     background-size: cover;
 }
 
+// detail-wrapper-start
 .detail-wrapper {
-    padding: 50px 300px 150px;
+    padding: 50px 300px 350px 200px;
 
-    @include media-breakpoint-down(xlg) {
-        padding: 50px 50px 150px;
+    @media (max-width:1440px) {
+        padding: 50px 200px 200px 150px;
+    }
+
+    @media (max-width:768px) {
+        padding: 50px 20px 200px 20px;
+    }
+
+    @media (max-width:425px) {
+        padding: 20px;
     }
 
     .details {
@@ -35,23 +44,36 @@ main {
     }
 }
 
-img {
-    height: 100%;
-    width: 100%;
-}
+// detail-wrapper-end
 
+// img-wrapper-start
 .desktop-img {
     display: block;
+    height: 100%;
 
     @include media-breakpoint-down(sm) {
         display: none;
     }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
 .mobile-img {
     display: none;
+    height: 280px;
 
     @include media-breakpoint-down(sm) {
         display: block;
     }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
 }
+
+// img-wrapper--end
