@@ -12,8 +12,12 @@ main {
         padding: 50px 200px 200px 150px;
     }
 
+    @media (max-width:1024px) {
+        padding: 50px 50px 200px 150px;
+    }
+
     @media (max-width:768px) {
-        padding: 50px 20px 200px 20px;
+        padding: 50px 50px 200px 20px;
     }
 
     @media (max-width:425px) {
@@ -23,18 +27,28 @@ main {
     .details {
 
         span {
-            letter-spacing: 18px;
-            font-weight: $font-weight-semibold;
+            letter-spacing: 16px;
+        }
+
+        .we-are {
+            font-weight: $font-weight-light;
+            font-size: 40px;
+        }
+
+        .comming-soon {
+            font-size: 40px;
+            font-weight: $font-weight-bold;
         }
 
         input {
             background: transparent;
             border: none;
             outline: none;
+            padding-left: 24px;
 
-            &::placeholder {
-                padding-left: 20px;
-            }
+            // &::placeholder {
+            //     padding-left: 20px;
+            // }
         }
 
         a {
@@ -77,3 +91,33 @@ main {
 }
 
 // img-wrapper--end
+#emailwrapper {
+    position: relative;
+    height: 40px;
+    width: 100%;
+
+    .errorbtn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        box-shadow: 0 10px 10px -4px $primary;
+    }
+
+}
+
+#emailId {
+    width: 76%;
+}
+
+.errorTrue {
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    right: -30px;
+    box-shadow: 0 10px 10px -4px $primary;
+}
+
+#erroricon {
+    margin: auto 50px auto 0;
+}

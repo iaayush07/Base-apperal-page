@@ -6809,9 +6809,14 @@ main {
     padding: 50px 200px 200px 150px;
   }
 }
+@media (max-width: 1024px) {
+  .detail-wrapper {
+    padding: 50px 50px 200px 150px;
+  }
+}
 @media (max-width: 768px) {
   .detail-wrapper {
-    padding: 50px 20px 200px 20px;
+    padding: 50px 50px 200px 20px;
   }
 }
 @media (max-width: 425px) {
@@ -6820,16 +6825,21 @@ main {
   }
 }
 .detail-wrapper .details span {
-  letter-spacing: 18px;
-  font-weight: 600;
+  letter-spacing: 16px;
+}
+.detail-wrapper .details .we-are {
+  font-weight: 300;
+  font-size: 40px;
+}
+.detail-wrapper .details .comming-soon {
+  font-size: 40px;
+  font-weight: 700;
 }
 .detail-wrapper .details input {
   background: transparent;
   border: none;
   outline: none;
-}
-.detail-wrapper .details input::placeholder {
-  padding-left: 20px;
+  padding-left: 24px;
 }
 .detail-wrapper .details a {
   padding: 8px 28px;
@@ -6862,6 +6872,35 @@ main {
 .mobile-img img {
   height: 100%;
   width: 100%;
+}
+
+#emailwrapper {
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+#emailwrapper .errorbtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  box-shadow: 0 10px 10px -4px #cda1a1;
+}
+
+#emailId {
+  width: 76%;
+}
+
+.errorTrue {
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  right: -30px;
+  box-shadow: 0 10px 10px -4px #cda1a1;
+}
+
+#erroricon {
+  margin: auto 50px auto 0;
 }
 
 /*# sourceMappingURL=style.css.map */
