@@ -24,6 +24,7 @@ function emailVarification(){
         emailerrmsg.classList.add(['d-none']);
         erroricon.classList.add(['d-none']);
         erroricon.classList.remove(['d-block']);
-        emailwrapper.style.border = '1px solid black'
+        emailwrapper.classList.remove(['border-danger']);
+        emailwrapper.classList.add(['border-success']);
     }
 }
